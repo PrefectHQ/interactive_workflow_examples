@@ -2,7 +2,6 @@ import asyncio
 import random
 from enum import Enum
 from prefect import flow, get_run_logger, task
-from prefect.input import RunInput
 from prefect.engine import pause_flow_run
 from prefect.blocks.notifications import SlackWebhook
 from prefect.context import get_run_context
@@ -25,12 +24,6 @@ class Animal(Enum):
 
     PIG = "pig"
     DOG = "dog"
-
-
-class ImageLabel(RunInput):
-    """A specification of runtime input that the flow expects"""
-
-    label: Animal
 
 
 class GuessingClassifier:
@@ -83,9 +76,9 @@ async def classify_image(image_url: str = PUGLY):
 
         await slack_block.notify(message)
 
-        image_label: ImageLabel = await pause_flow_run(wait_for_input=ImageLabel)
+        label = await pause_flow_run(wait_for_input=Animal, timeout=60 * 60)
 
-        if image_label.label == label:
+        if label == label:
             logger.info("The model was right!")
         else:
             logger.info("The model was wrong!")

@@ -52,17 +52,14 @@ You can run the example like this:
 You'll see output like the following:
 
 ```
-╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ Your flow 'classify-image' is being served and polling for scheduled runs!                                                                                         │
-│                                                                                                                                                                    │
-│ To trigger a run for this flow, use the following command:                                                                                                         │
-│                                                                                                                                                                    │
-│         $ prefect deployment run 'classify-image/guessing-classifier'                                                                                              │
-│                                                                                                                                                                    │
-│ You can also run your flow via the Prefect UI:                                                                                                                     │
-│ https://app.prefect.cloud/account/<your URL>                                                                                                                       │
-│                                                                                                                                                                    │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ Your flow 'classify-image' is being served and polling for scheduled runs!
+
+ To trigger a run for this flow, use the following command:
+
+         $ prefect deployment run 'classify-image/guessing-classifier'
+
+ You can also run your flow via the Prefect UI:
+ https://app.prefect.cloud/account/<your URL>
 ```
 
 Follow either of the instructions in that message to run the flow from the UI or

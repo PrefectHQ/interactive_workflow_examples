@@ -1,3 +1,9 @@
+"""
+An example of a human-in-the-loop flow using Prefect's interactive
+workflow features.
+
+Included in the blog post: https://www.prefect.io/blog/unveiling-interactive-workflows
+"""
 import asyncio
 import random
 from enum import Enum

@@ -9,15 +9,15 @@ feature.
 
 ## Installing dependencies
 
-Before you use this flow, you'll need to install its dependencies. Using
+Before you run these flows, you'll need to install their dependencies. Using
 Python 3.10 or later with access to `pip`, run this code in your terminal:
 
     $ pip install -r requirements.txt
     
 ## Creating a Slack webhook block
 
-This example uses a Slack webhook block to notify humans that we need them in
-the loop. Follow the instructions in the [prefect-slack
+One of the example flows uses a Slack webhook block to notify humans that we
+need them in the loop. Follow the instructions in the [prefect-slack
 repository](https://prefecthq.github.io/prefect-slack/) to create a webhook in
 Slack and configure a Slack webhook block in Prefect that uses your new webhook.
 
@@ -29,8 +29,9 @@ will look for a block with that name.
 You can run this example flow using either an open-source Prefect
 server or Prefect Cloud.
 
-Using Prefect Cloud is faster. With Prefect installed, you can use the following
-command to log in or sign up for a free trial:
+Using Prefect Cloud is fast to get started. With the `prefect` package
+installed, you can use the following command to log in or sign up for 
+a free trial:
 
     $ prefect cloud login
 

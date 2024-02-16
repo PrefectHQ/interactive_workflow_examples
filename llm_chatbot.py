@@ -1,5 +1,5 @@
 """
-In this advanced Interactive Workflwos example, a pair of flows works together
+In this advanced Interactive Workflows example, a pair of flows works together
 to create an interactive chatbot.
 
 This example uses Marvin, a toolkit for building natural language interfaces,
@@ -11,7 +11,7 @@ make sure your OpenAI API key is set up correctly:
 As with other examples, you should also be set up with Prefect Cloud or
 a running open-source Prefect server.
     
-After setup is comlete, you can try this example by opening two terminals.
+After setup is complete, you can try this example by opening two terminals.
 Both should have access to the Python environment where you've installed
 Prefect and Marvin. In one terminal, run the "answerer" flow:
 
